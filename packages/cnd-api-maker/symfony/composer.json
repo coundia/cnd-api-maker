@@ -4,20 +4,20 @@
     "license": "MIT",
     "require": {
         "php": ">=8.2",
+        "cnd-api-maker/core": "*",
         "symfony/framework-bundle": "^6.4 || ^7.0 || ^8.0",
-        "symfony/console": "^6.4 || ^7.0",
-        "symfony/dependency-injection": "^6.4 || ^7.0",
-        "symfony/config": "^6.4 || ^7.0",
-        "symfony/filesystem": "^6.4 || ^7.0",
-        "symfony/yaml": "^6.4 || ^7.0",
-        "symfony/string": "^6.4 || ^7.0",
-        "cnd-api-maker/core": "*"
+        "symfony/console": "^6.4 || ^7.0 || ^8.0",
+        "symfony/dependency-injection": "^6.4 || ^7.0 || ^8.0",
+        "symfony/config": "^6.4 || ^7.0 || ^8.0",
+        "symfony/filesystem": "^6.4 || ^7.0 || ^8.0",
+        "symfony/yaml": "^6.4 || ^7.0 || ^8.0",
+        "symfony/string": "^6.4 || ^7.0 || ^8.0"
     },
     "require-dev": {
         "doctrine/doctrine-fixtures-bundle": ">=4.3.1",
-        "phpunit/phpunit": "^10.5.60",
-        "symfony/browser-kit": "7.2.*",
-        "symfony/css-selector": "7.2.*",
+        "phpunit/phpunit": "^10.5 || ^11.0",
+        "symfony/browser-kit": "^6.4 || ^7.0 || ^8.0",
+        "symfony/css-selector": "^6.4 || ^7.0 || ^8.0",
         "symfony/maker-bundle": "^1.65.1",
         "zenstruck/foundry": "^2.8"
     },
