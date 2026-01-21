@@ -1,0 +1,24 @@
+{
+    "name": "cnd-api-maker/laravel",
+    "type": "library",
+    "license": "proprietary",
+    "require": {
+        "php": "^8.2",
+        "cnd-api-maker/core": "*",
+        "illuminate/support": "^10.0|^11.0|^12.0",
+        "api-platform/laravel": "*",
+        "laravel/sanctum": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "CndApiMaker\\Laravel\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "CndApiMaker\\Laravel\\ApiPlatformMakerServiceProvider"
+            ]
+        }
+    }
+}

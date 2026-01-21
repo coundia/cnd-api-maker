@@ -1,0 +1,39 @@
+entity Tenant {
+  name String required
+  slug String required
+  description TextBlob
+  settings TextBlob
+}
+
+entity Role {
+  code String required
+  label String required
+  description TextBlob
+  color String
+  active Boolean
+}
+
+entity Permission {
+  code String required
+  label String required
+  active Boolean
+  description TextBlob
+}
+
+entity RolePermission {
+  description TextBlob
+}
+
+entity UserRole {
+    user_id integer
+  description TextBlob
+}
+
+relationship OneToMany {
+
+  Role{permissionLinks} to RolePermission{role}
+  Permission{roleLinks} to RolePermission{permission}
+
+  Role{userLinks} to UserRole{role}
+
+}
