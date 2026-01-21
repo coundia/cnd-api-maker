@@ -1,0 +1,18 @@
+entity Employee {
+	firstName String required
+	lastName String required
+	email String
+	phoneNumber String
+	hireDate Instant
+	salary Long
+	commissionPct Long
+}
+
+entity Ticket {
+	title String required
+	due Long
+}
+
+relationship OneToMany {
+	Employee to Ticket{employee}
+}
